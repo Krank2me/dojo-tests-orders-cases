@@ -20,3 +20,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm test
+  build1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: A future implementation of a build stage
+        run: echo "run build"
