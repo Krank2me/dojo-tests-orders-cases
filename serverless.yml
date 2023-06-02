@@ -1,0 +1,10 @@
+service: clean-cloud-cicd-panda
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  panda-function-cicd:
+    handler: src/app.handler
